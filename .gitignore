@@ -1,0 +1,6 @@
+/node_modules
+/splitfiles
+package.lock.json
+.~lock-data.csv#
+npm-debug.log
+*.csv

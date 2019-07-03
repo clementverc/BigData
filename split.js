@@ -2,7 +2,7 @@ const csvSplitStream = require('csv-split-stream')
 const fs = require('fs')
 
 const path = './splitfiles'
-const csv = '/home/clement/Bureau/BigData/data.csv'
+const csv = 'data.csv'
 
 const fileExist = () => {
   return new Promise((resolve) => {
@@ -20,7 +20,7 @@ const splitSVG = (csv) => {
     csvSplitStream.split(
       fs.createReadStream(csv),
       {
-        lineLimit: 10000
+        lineLimit: 693178
       },
       (index) => fs.createWriteStream(`./splitfiles/${index}.csv`)
     ).then((response) => {
