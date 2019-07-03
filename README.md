@@ -1,8 +1,22 @@
 # BigData
 School BigData project with used multiple process 
 
-# to run app :
+# First :
 
-- install npm dependencies ( npm install --save)
-- run node split.js (to split the big CSV data file)
-- run node process.js (to run multi-process who saved data in mongodb)
+- take your csv file and put it at the root of the directory by naming it 'data.csv'
+
+# Second : 
+
+## Install dependencies :
+
+- run : npm install --save
+
+## Split the CSV file in 50Mo files :
+
+- run : node split.js
+
+# Third : 
+
+## Run process to save data in Mongodb :
+
+- run : node process.js
